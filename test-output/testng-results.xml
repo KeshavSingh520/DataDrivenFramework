@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[Customer added successfully with customer id :6]]>
+    </line>
+    <line>
+      <![CDATA[Customer added successfully with customer id :7]]>
+    </line>
+    <line>
+      <![CDATA[Customer added successfully with customer id :8]]>
+    </line>
+    <line>
+      <![CDATA[Customer added successfully with customer id :9]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3314" started-at="2018-07-01T08:04:16Z" finished-at="2018-07-01T08:04:20Z">
+    <groups>
+    </groups>
+    <test name="BankManagerLoginTest" duration-ms="679" started-at="2018-07-01T08:04:16Z" finished-at="2018-07-01T08:04:17Z">
+      <class name="testcase.BankManagerLoginTest">
+        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:testcase.BankManagerLoginTest@408d971b]" name="loginAsBankManager" duration-ms="257" started-at="2018-07-01T08:04:16Z" finished-at="2018-07-01T08:04:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManager -->
+      </class> <!-- testcase.BankManagerLoginTest -->
+    </test> <!-- BankManagerLoginTest -->
+    <test name="AddCustomerTest" duration-ms="2589" started-at="2018-07-01T08:04:17Z" finished-at="2018-07-01T08:04:20Z">
+      <class name="testcase.AddCustomerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.AddCustomerTest@7dcf94f8]" name="setUp" is-config="true" duration-ms="11924" started-at="2018-07-01T08:04:04Z" finished-at="2018-07-01T08:04:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@7dcf94f8]" name="addACustomer" duration-ms="1216" started-at="2018-07-01T08:04:17Z" data-provider="getData" finished-at="2018-07-01T08:04:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[trainer@way2automation.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfsdf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ngjg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Customer added successfully with customer id :6]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addACustomer -->
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@7dcf94f8]" name="addACustomer" duration-ms="273" started-at="2018-07-01T08:04:18Z" data-provider="getData" finished-at="2018-07-01T08:04:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[w2ajava@way2automation.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfsdf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fdfsdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Customer added successfully with customer id :7]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addACustomer -->
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@7dcf94f8]" name="addACustomer" duration-ms="272" started-at="2018-07-01T08:04:19Z" data-provider="getData" finished-at="2018-07-01T08:04:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumcoaching@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdffsslkjhfhjkwrwe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fdsf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Customer added successfully with customer id :8]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addACustomer -->
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@7dcf94f8]" name="addACustomer" duration-ms="211" started-at="2018-07-01T08:04:19Z" data-provider="getData" finished-at="2018-07-01T08:04:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[corporate@way2automation.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfsdfs]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dfs]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Customer added successfully with customer id :9]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addACustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.AddCustomerTest@7dcf94f8]" name="tearDown" is-config="true" duration-ms="2034" started-at="2018-07-01T08:04:20Z" finished-at="2018-07-01T08:04:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.AddCustomerTest -->
+    </test> <!-- AddCustomerTest -->
+  </suite> <!-- Suite -->
+</testng-results>

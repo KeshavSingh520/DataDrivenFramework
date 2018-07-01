@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="7" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="4560" started-at="2018-05-06T17:51:47Z" finished-at="2018-05-06T17:51:51Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="4560" started-at="2018-05-06T17:51:47Z" finished-at="2018-05-06T17:51:51Z">
+      <class name="testcase.BankManagerLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.BankManagerLoginTest@3c407114]" name="setUp" is-config="true" duration-ms="14248" started-at="2018-05-06T17:51:32Z" finished-at="2018-05-06T17:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:testcase.BankManagerLoginTest@3c407114]" name="loginAsBankManager" duration-ms="252" started-at="2018-05-06T17:51:47Z" finished-at="2018-05-06T17:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManager -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.BankManagerLoginTest@3c407114]" name="tearDown" is-config="true" duration-ms="2502" started-at="2018-05-06T17:51:51Z" finished-at="2018-05-06T17:51:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.BankManagerLoginTest -->
+      <class name="testcase.AddCustomerTest">
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@35ef1869]" name="addACustomer" duration-ms="3156" started-at="2018-05-06T17:51:47Z" data-provider="getData" finished-at="2018-05-06T17:51:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[trainer@way2automation.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfsdf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ngjg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addACustomer -->
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@35ef1869]" name="addACustomer" duration-ms="326" started-at="2018-05-06T17:51:50Z" data-provider="getData" finished-at="2018-05-06T17:51:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[w2ajava@way2automation.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfsdf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fdfsdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addACustomer -->
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@35ef1869]" name="addACustomer" duration-ms="397" started-at="2018-05-06T17:51:51Z" data-provider="getData" finished-at="2018-05-06T17:51:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumcoaching@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdffsslkjhfhjkwrwe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fdsf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addACustomer -->
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@35ef1869]" name="addACustomer" duration-ms="338" started-at="2018-05-06T17:51:51Z" data-provider="getData" finished-at="2018-05-06T17:51:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[corporate@way2automation.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfsdfs]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dfs]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addACustomer -->
+      </class> <!-- testcase.AddCustomerTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
