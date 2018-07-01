@@ -29,7 +29,7 @@ public class base {
 	
 
 	public static WebDriver driver;
-	public static Logger log = Logger.getLogger("devpinoyLogger");
+	public static  Logger log = Logger.getLogger("devpinoyLogger");
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
 	public static Properties OR = new Properties();
