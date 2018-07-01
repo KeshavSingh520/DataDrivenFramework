@@ -126,7 +126,7 @@ public class base {
 		Date d = new Date();
 		String screenshotName=d.toString().replace(" ", "_").replace(":", "_")+".jpg";
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile, new File("\\src\\test\\resources\\screenshot\\"+screenshotName));
+		FileUtils.copyFile(screenshotFile, new File(System.getProperty("user.dir")+"\\src\\test\\resources\\Screenshots\\"+screenshotName));
 	}
 
 	public static boolean isElementPresent(String key) {
