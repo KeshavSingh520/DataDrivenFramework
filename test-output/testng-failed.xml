@@ -5,40 +5,15 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="listener.CustomeListener"/>
   </listeners>
-  <test thread-count="5" name="BankManagerLoginTest(failed)">
-    <classes>
-      <class name="testcase.AddCustomerTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="addACustomer"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testcase.AddCustomerTest -->
-      <class name="testcase.BankManagerLoginTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="loginAsBankManager"/>
-        </methods>
-      </class> <!-- testcase.BankManagerLoginTest -->
-    </classes>
-  </test> <!-- BankManagerLoginTest(failed) -->
   <test thread-count="5" name="AddCustomerTest(failed)">
     <classes>
       <class name="testcase.AddCustomerTest">
         <methods>
           <include name="setUp"/>
-          <include name="addACustomer"/>
+          <include name="addACustomer" invocation-numbers="0 1 2 3"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- testcase.AddCustomerTest -->
-      <class name="testcase.BankManagerLoginTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="loginAsBankManager"/>
-        </methods>
-      </class> <!-- testcase.BankManagerLoginTest -->
     </classes>
   </test> <!-- AddCustomerTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

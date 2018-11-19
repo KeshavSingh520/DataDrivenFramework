@@ -1,23 +1,29 @@
 package base;
 
 import java.io.File;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.Alert;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.io.SAXReader;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -35,19 +41,26 @@ public class base {
 	public static Properties OR = new Properties();
 	public static Properties Config = new Properties();
 	public static FileInputStream fis;
+	public static File fisXML;
 	public static MonitoringMail mail = new MonitoringMail();
 	public static WebDriverWait wait;
-
+	public static        SAXReader saxReader;
+	public static Document reader;
+//	Capabilities caps= new DesiredCapabilities();\
+	
+   
 	
 	
 	@BeforeSuite
-	public void setUp() {
+	public void setUp() throws DocumentException, MalformedURLException {
 
 		if (driver == null) {
 
 			try {
 				fis = new FileInputStream(
 						System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\Config.properties");
+			
+				
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -55,6 +68,9 @@ public class base {
 			try {
 				Config.load(fis);
 				log.debug("Config properties file loaded");
+				
+				
+				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -81,6 +97,12 @@ public class base {
 						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				log.debug("Firefox Launched !!!");
+				Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
+			    
+				String browserName = cap.getBrowserName().toLowerCase();
+				String browserVersion = cap.getVersion();
+				System.out.println(browserName);
+				System.out.println(browserVersion);
 
 			} else if (Config.getProperty("browser").equals("chrome")) {
 
@@ -104,6 +126,8 @@ public class base {
 					TimeUnit.SECONDS);
 			driver.get(Config.getProperty("testsiteurl"));
 			log.debug("Navigated to : " + Config.getProperty("testsiteurl"));
+			fisXML=new File(System.getProperty("user.dir") + "\\src\\test\\resources\\XmLFiles\\Or.xml");
+			
 			/*try {
 				DbManager.setMysqlDbConnection();
 				log.debug("DB Connection established !!!");
@@ -116,6 +140,9 @@ public class base {
 			}*/
 			wait = new WebDriverWait(driver, Integer.parseInt(Config.getProperty("explicit.wait")));
 
+
+			saxReader=new SAXReader();
+			 reader=saxReader.read(fisXML);
 		}
 
 	}
@@ -175,12 +202,20 @@ public class base {
 		log.debug("Clicking on an Element : " + key);
 	}
 
+	
+	public static String getLocatorText(String string)
+	{
+		return reader.selectSingleNode(string).getText();
+		
+	}
+	
 	public void type(String key, String value) {
 
 		try {
 			if (key.endsWith("_XPATH")) {
 
 				driver.findElement(By.xpath(OR.getProperty(key))).sendKeys(value);
+				//driver.findElement(By.xpath("")).sendKeys(value);
 
 			} else if (key.endsWith("_CSS")) {
 				driver.findElement(By.cssSelector(OR.getProperty(key))).sendKeys(value);

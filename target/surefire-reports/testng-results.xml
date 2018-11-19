@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="7" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
+    <line>
+      <![CDATA[Alert Text is: null]]>
+    </line>
+    <line>
+      <![CDATA[Alert Text is: Customer added successfully with customer id :6]]>
+    </line>
+    <line>
+      <![CDATA[Alert Text is: Customer added successfully with customer id :7]]>
+    </line>
+    <line>
+      <![CDATA[Alert Text is: Customer added successfully with customer id :8]]>
+    </line>
+    <line>
+      <![CDATA[Alert Text is: Customer added successfully with customer id :9]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="4560" started-at="2018-05-06T17:51:47Z" finished-at="2018-05-06T17:51:51Z">
+  <suite name="Suite" duration-ms="4260" started-at="2018-11-07T14:56:19Z" finished-at="2018-11-07T14:56:23Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="4560" started-at="2018-05-06T17:51:47Z" finished-at="2018-05-06T17:51:51Z">
+    <test name="BankManagerLoginTest" duration-ms="1628" started-at="2018-11-07T14:56:19Z" finished-at="2018-11-07T14:56:21Z">
       <class name="testcase.BankManagerLoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.BankManagerLoginTest@3c407114]" name="setUp" is-config="true" duration-ms="14248" started-at="2018-05-06T17:51:32Z" finished-at="2018-05-06T17:51:47Z">
+        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:testcase.BankManagerLoginTest@68999068]" name="loginAsBankManager" duration-ms="1223" started-at="2018-11-07T14:56:19Z" finished-at="2018-11-07T14:56:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Alert Text is: null]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManager -->
+      </class> <!-- testcase.BankManagerLoginTest -->
+    </test> <!-- BankManagerLoginTest -->
+    <test name="AddCustomerTest" duration-ms="2585" started-at="2018-11-07T14:56:21Z" finished-at="2018-11-07T14:56:23Z">
+      <class name="testcase.AddCustomerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="setUp" is-config="true" duration-ms="17464" started-at="2018-11-07T14:56:02Z" finished-at="2018-11-07T14:56:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:testcase.BankManagerLoginTest@3c407114]" name="loginAsBankManager" duration-ms="252" started-at="2018-05-06T17:51:47Z" finished-at="2018-05-06T17:51:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsBankManager -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.BankManagerLoginTest@3c407114]" name="tearDown" is-config="true" duration-ms="2502" started-at="2018-05-06T17:51:51Z" finished-at="2018-05-06T17:51:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcase.BankManagerLoginTest -->
-      <class name="testcase.AddCustomerTest">
-        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@35ef1869]" name="addACustomer" duration-ms="3156" started-at="2018-05-06T17:51:47Z" data-provider="getData" finished-at="2018-05-06T17:51:50Z">
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="addACustomer" duration-ms="965" started-at="2018-11-07T14:56:21Z" data-provider="getData" finished-at="2018-11-07T14:56:22Z">
           <params>
             <param index="0">
               <value>
@@ -40,9 +56,12 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Alert Text is: Customer added successfully with customer id :6]]>
+            </line>
           </reporter-output>
         </test-method> <!-- addACustomer -->
-        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@35ef1869]" name="addACustomer" duration-ms="326" started-at="2018-05-06T17:51:50Z" data-provider="getData" finished-at="2018-05-06T17:51:51Z">
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="addACustomer" duration-ms="299" started-at="2018-11-07T14:56:22Z" data-provider="getData" finished-at="2018-11-07T14:56:22Z">
           <params>
             <param index="0">
               <value>
@@ -61,9 +80,12 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Alert Text is: Customer added successfully with customer id :7]]>
+            </line>
           </reporter-output>
         </test-method> <!-- addACustomer -->
-        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@35ef1869]" name="addACustomer" duration-ms="397" started-at="2018-05-06T17:51:51Z" data-provider="getData" finished-at="2018-05-06T17:51:51Z">
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="addACustomer" duration-ms="278" started-at="2018-11-07T14:56:22Z" data-provider="getData" finished-at="2018-11-07T14:56:23Z">
           <params>
             <param index="0">
               <value>
@@ -82,9 +104,12 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Alert Text is: Customer added successfully with customer id :8]]>
+            </line>
           </reporter-output>
         </test-method> <!-- addACustomer -->
-        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@35ef1869]" name="addACustomer" duration-ms="338" started-at="2018-05-06T17:51:51Z" data-provider="getData" finished-at="2018-05-06T17:51:51Z">
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="addACustomer" duration-ms="270" started-at="2018-11-07T14:56:23Z" data-provider="getData" finished-at="2018-11-07T14:56:23Z">
           <params>
             <param index="0">
               <value>
@@ -103,9 +128,16 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Alert Text is: Customer added successfully with customer id :9]]>
+            </line>
           </reporter-output>
         </test-method> <!-- addACustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="tearDown" is-config="true" duration-ms="5428" started-at="2018-11-07T14:56:23Z" finished-at="2018-11-07T14:56:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testcase.AddCustomerTest -->
-    </test> <!-- Test -->
+    </test> <!-- AddCustomerTest -->
   </suite> <!-- Suite -->
 </testng-results>

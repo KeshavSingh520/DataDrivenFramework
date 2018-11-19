@@ -1,0 +1,12 @@
+<menu>
+
+<bmlBtn_CSS>div > div:last-child > .btn.btn-primary.btn-lg</bmlBtn_CSS>
+<addCustomerBtn_CSS>button[ng-class>'btnClass1']</addCustomerBtn_CSS>
+
+<!-- Add Customer Test-->
+<firstName_CSS>input[ng-model>'fName']</firstName_CSS>
+<lastName_CSS>input[ng-model>'lName']</lastName_CSS>
+<postCode_CSS>input[ng-model>'postCd']</postCode_CSS>
+<addCust_CSS>button[type>'submit']</addCust_CSS>
+
+</menu>

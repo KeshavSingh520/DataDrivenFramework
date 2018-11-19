@@ -1,6 +1,7 @@
 package testcase;
 
 import org.openqa.selenium.Alert;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -20,7 +21,8 @@ public class AddCustomerTest extends base {
 		Alert alert=driver.switchTo().alert();
 		
 		alertText=alert.getText();
-		
+		System.out.println(alertText);
+		Assert.assertEquals(true, false);
 	}
 
 	@DataProvider
