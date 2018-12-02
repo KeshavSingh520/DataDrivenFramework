@@ -17,12 +17,12 @@
       <![CDATA[Alert Text is: Customer added successfully with customer id :9]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="4260" started-at="2018-11-07T14:56:19Z" finished-at="2018-11-07T14:56:23Z">
+  <suite name="Suite" duration-ms="1809" started-at="2018-11-20T16:48:18Z" finished-at="2018-11-20T16:48:20Z">
     <groups>
     </groups>
-    <test name="BankManagerLoginTest" duration-ms="1628" started-at="2018-11-07T14:56:19Z" finished-at="2018-11-07T14:56:21Z">
+    <test name="BankManagerLoginTest" duration-ms="384" started-at="2018-11-20T16:48:18Z" finished-at="2018-11-20T16:48:19Z">
       <class name="testcase.BankManagerLoginTest">
-        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:testcase.BankManagerLoginTest@68999068]" name="loginAsBankManager" duration-ms="1223" started-at="2018-11-07T14:56:19Z" finished-at="2018-11-07T14:56:20Z">
+        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:testcase.BankManagerLoginTest@50eac852]" name="loginAsBankManager" duration-ms="258" started-at="2018-11-20T16:48:18Z" finished-at="2018-11-20T16:48:18Z">
           <reporter-output>
             <line>
               <![CDATA[Alert Text is: null]]>
@@ -31,13 +31,13 @@
         </test-method> <!-- loginAsBankManager -->
       </class> <!-- testcase.BankManagerLoginTest -->
     </test> <!-- BankManagerLoginTest -->
-    <test name="AddCustomerTest" duration-ms="2585" started-at="2018-11-07T14:56:21Z" finished-at="2018-11-07T14:56:23Z">
+    <test name="AddCustomerTest" duration-ms="1098" started-at="2018-11-20T16:48:19Z" finished-at="2018-11-20T16:48:20Z">
       <class name="testcase.AddCustomerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="setUp" is-config="true" duration-ms="17464" started-at="2018-11-07T14:56:02Z" finished-at="2018-11-07T14:56:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.AddCustomerTest@4d9e68d0]" name="setUp" is-config="true" duration-ms="9178" started-at="2018-11-20T16:48:09Z" finished-at="2018-11-20T16:48:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="addACustomer" duration-ms="965" started-at="2018-11-07T14:56:21Z" data-provider="getData" finished-at="2018-11-07T14:56:22Z">
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@4d9e68d0]" name="addACustomer" duration-ms="250" started-at="2018-11-20T16:48:19Z" data-provider="getData" finished-at="2018-11-20T16:48:19Z">
           <params>
             <param index="0">
               <value>
@@ -61,7 +61,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addACustomer -->
-        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="addACustomer" duration-ms="299" started-at="2018-11-07T14:56:22Z" data-provider="getData" finished-at="2018-11-07T14:56:22Z">
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@4d9e68d0]" name="addACustomer" duration-ms="135" started-at="2018-11-20T16:48:19Z" data-provider="getData" finished-at="2018-11-20T16:48:19Z">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addACustomer -->
-        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="addACustomer" duration-ms="278" started-at="2018-11-07T14:56:22Z" data-provider="getData" finished-at="2018-11-07T14:56:23Z">
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@4d9e68d0]" name="addACustomer" duration-ms="137" started-at="2018-11-20T16:48:19Z" data-provider="getData" finished-at="2018-11-20T16:48:20Z">
           <params>
             <param index="0">
               <value>
@@ -109,7 +109,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addACustomer -->
-        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="addACustomer" duration-ms="270" started-at="2018-11-07T14:56:23Z" data-provider="getData" finished-at="2018-11-07T14:56:23Z">
+        <test-method status="PASS" signature="addACustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.AddCustomerTest@4d9e68d0]" name="addACustomer" duration-ms="127" started-at="2018-11-20T16:48:20Z" data-provider="getData" finished-at="2018-11-20T16:48:20Z">
           <params>
             <param index="0">
               <value>
@@ -133,7 +133,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addACustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.AddCustomerTest@dbf57b3]" name="tearDown" is-config="true" duration-ms="5428" started-at="2018-11-07T14:56:23Z" finished-at="2018-11-07T14:56:29Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.AddCustomerTest@4d9e68d0]" name="tearDown" is-config="true" duration-ms="2308" started-at="2018-11-20T16:48:20Z" finished-at="2018-11-20T16:48:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

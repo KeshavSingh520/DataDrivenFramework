@@ -28,6 +28,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ExcelReader;
 import utilities.MonitoringMail;
 
@@ -92,9 +93,10 @@ public class base {
 			}
 
 			if (Config.getProperty("browser").equals("firefox")) {
+				 WebDriverManager.firefoxdriver().setup();
 
-				System.setProperty("webdriver.gecko.driver",
-						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
+//				System.setProperty("webdriver.gecko.driver",
+//						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				log.debug("Firefox Launched !!!");
 				Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();

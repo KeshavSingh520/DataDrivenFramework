@@ -22,7 +22,7 @@ public class AddCustomerTest extends base {
 		
 		alertText=alert.getText();
 		System.out.println(alertText);
-		Assert.assertEquals(true, false);
+		
 	}
 
 	@DataProvider
