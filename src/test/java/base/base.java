@@ -112,11 +112,9 @@ public class base {
 				 * System.getProperty("user.dir") +
 				 * "\\src\\test\\resources\\executables\\chromedriver.exe");
 				 */
-				// driver = new RemoteWebDriver(new
-				// URL("http://192.168.1.9:42443/wd/hub"),options);
-				// driver = new RemoteWebDriver(new
-				// URL("http://172.27.232.183:14381/wd/hub"),options);
-				driver = new RemoteWebDriver(new URL("http://192.168.1.11:8078/wd/hub"), options);
+				 driver = new RemoteWebDriver(new URL("http://192.168.1.9:42443/wd/hub"),options);
+				// driver = new RemoteWebDriver(new URL("http://172.27.232.183:14381/wd/hub"),options);
+				//driver = new RemoteWebDriver(new URL("http://192.168.1.11:8078/wd/hub"), options);
 				log.debug("Chrome Launched !!!");
 
 			} else if (Config.getProperty("browser").equals("ie")) {
