@@ -57,12 +57,7 @@ public class CustomeListener  extends base implements ITestListener{
 		
 		try {
 			base.captureScreenshot();
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		}finally
-		{
-			
+		} catch (Exception e) {
 			
 			Reporter.log("Alert Text is: "+AddCustomerTest.alertText);
 		}
